@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Analytics Page</title>
 </head>
 <body>
-    
+    <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+
+    <script>
+        var config = {
+            databaseURL: "https://robloxdb-c3923-default-rtdb.firebaseio.com/"
+        }
+
+        const app = firebase.initializeApp(config)
+        const database = firebase.getDatabase(app)
+    </script>
 </body>
 </html>
