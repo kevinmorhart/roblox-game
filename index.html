@@ -11,7 +11,7 @@
         }
 
         const app = firebase.initializeApp(config)
-        const database = firebase.getDatabase(app)
+        const database = firebase.database()
 
         console.log(database.ref("gamePresence/").get())
     </script>
